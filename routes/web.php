@@ -16,16 +16,16 @@ use Illuminate\Support\Facades\Auth;
 
 //Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
+Route::get("/", [App\Http\Controllers\HomeController::class, "home"])->name("home");
 
-Route::get('/pagina1', function() {
+Route::get("/pagina1", function() {
     return view("pagina1");
 });
 
-Route::get('/pagina2', function() {
+Route::get("/pagina2", function() {
     return view("pagina2");
 });
 
-Route::get('/pagina3', function() {
+Route::get("/pagina3", function() {
     return view("pagina3");
 });
